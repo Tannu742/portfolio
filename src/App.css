@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.w-100{
+  width: 100%;
+}
+.text-align-center{
+  text-align: center;
+}
+.text-align-end{
+  text-align: end;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.justify-content-spaceBetween{
+  justify-content: space-between;
+}
+.justify-content-spaceAround{
+  justify-content: space-around;
+}
+.align-content-center{
+  align-content: center;
+}
+.marginAuto{
+  margin: 0 auto;
+}
+.marginBottom_20{
+  margin-bottom: 20px;
+}

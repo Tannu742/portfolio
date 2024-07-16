@@ -1,0 +1,217 @@
+@import url('main.css');
+body.dark_theme {
+    background: var(--body-color);
+}
+.navLinks a {
+    color: var(--basic-text);
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 10px;
+}
+.navLinks a.active {
+    color: var(--main-color);
+}
+.home .card {
+    border-style: none;
+    margin: 90px;
+    background-color: var(--basic-color);
+}
+.home .text-uppercase.card-title.h5 {
+    color: var(--main-color);
+}
+.home .card-text{
+    font-size: 3.25rem;
+    font-weight: 800;
+    color: var(--main-color2);
+}
+button.text-uppercase.btn.btn-outline-primary {
+    background: linear-gradient(to right, var(--gradient-backcolor1), var(--gradient-backColor));
+    color: white;
+    padding: 10px 35px;
+    font-weight: 700;
+    margin: 10px;
+}
+button.text-uppercase.btn.btn-outline-primary:hover {
+    background: var(--basic-color);
+    color: var(--gradient-backcolor1);
+    border: 2px solid var(--gradient-backColor);
+}
+button.text-uppercase.contactBtn.btn.btn-outline-primary:hover{
+    color: #fff;
+}
+.about h1{
+    font-size: 3.25rem;
+    font-weight: 800;
+    color: var(--main-color2);
+    text-shadow: 2px 2px 1px var(--main-color);
+}
+.about h3{
+    font-weight: bolder;
+    font-style: oblique;
+    font-family: math;
+    margin-top: 20px;
+    color: var(--basic-text);
+}
+.about p{
+    font-family: serif;
+    font-size: 18px;
+    color: var(--basic-text);
+}
+.about ol li{
+    list-style: none;
+    padding-bottom: 10px;
+    color: var(--basic-text);
+}
+.about ol li span{
+    color: var(--main-color2);
+    font-weight: bolder;
+    margin-right: 10px;
+    letter-spacing: 0.5px;
+}
+.services h1 {
+    font-size: 3.25rem;
+    font-weight: 800;
+    color: var(--main-color2);
+    text-shadow: 2px 2px 1px var(--main-color);
+}
+.services p{
+    font-weight: bolder;
+    font-style: oblique;
+    font-family: math;
+    margin: 10px 0 25px;
+    color: var(--basic-text);
+}
+.services .card{
+    margin-bottom: 25px;
+    width: 22%;
+    background-color: var(--basic-color);
+}
+.services .card .card-header{
+    color: var(--main-color);
+    font-weight: bolder;
+}
+.services .card:hover{
+    box-shadow: 0px 15px 30px var(--hover-color);
+}
+.services .card:hover cite{
+    color: var(--basic-text);
+}
+.nav-tabs .nav-link{
+    font-weight: bolder;
+}
+.skills .nav.nav-tabs.nav-fill a{
+    background-color: var(--basic-color);
+    color: var(--basic-text);
+}
+.skills .nav.nav-tabs.nav-fill a.active{
+    color: var(--main-color);
+}
+.container.professionalSkills{
+    margin: 40px 20px;
+}
+.professionalSkills h2{
+    font-size: 3.25rem;
+    font-weight: 800;
+    color: var(--main-color2);
+    text-shadow: 2px 2px 1px var(--main-color);
+}
+.professionalSkills ol li{
+    color: var(--basic-text);
+    list-style: none;
+    margin-bottom: 10px;
+}
+.professionalSkills ol li span{
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: 18px;
+    margin: 10px 0 25px;
+}
+.progress-bar.progress-bar-animated.progress-bar-striped{
+    background-color: var(--main-color2);
+    transition: 3s;
+}
+.Education .card{
+    margin: 40px 20px;
+    background-color: var(--basic-color);
+}
+.Education .card .card-header{
+    color: var(--main-color);
+    font-weight: bolder;
+}
+.Education .card:hover{
+    box-shadow: 0px 15px 30px var(--hover-color);
+}
+.Education .card:hover footer{
+    color: var(--basic-text);
+}
+.experience h2{
+    font-size: 3.25rem;
+    font-weight: 800;
+    color: var(--main-color2);
+    text-shadow: 2px 2px 1px var(--main-color);
+}
+.contact h2{
+    font-size: 3.25rem;
+    font-weight: 800;
+    color: var(--main-color2);
+    text-shadow: 2px 2px 1px var(--main-color);
+}
+.contact span{
+    color: var(--basic-text);
+    font-weight: bolder;
+    font-size: 25px;
+}
+.contact .row .card{
+    margin: 25px 0;
+    background: linear-gradient(to right, var(--gradient-backcolor1), var(--gradient-backColor));
+    color: var(--basic-text);
+}
+.contact .row .card .card-img-top{
+    padding-bottom: 20px;
+}
+.contact .row .card .card-text{
+    font-weight: bolder;
+    font-family: math;
+    margin: 10px;
+}
+.contact .row .card a{
+    text-decoration: none;
+    color: var(--main-color2);
+    font-weight: 600;
+}
+.contact .col-6{
+    margin: 25px 0;
+    border: #fff;
+}
+.contact .col-6 label.form-label{
+    font-weight: bolder;
+}
+.offLayLinks a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background: linear-gradient(to right, var(--gradient-backcolor1), var(--gradient-backColor));
+    color: var(--text-color);
+    padding: 10px 35px;
+    font-weight: 700;
+    margin: 10px;
+}
+.offLayLinks a:hover{
+    background: var(--basic-color);
+    color: var(--gradient-backcolor1);
+    border: 2px solid var(--gradient-backColor);
+}
+.offcanvas.offcanvas-start.show{
+    background-color: var(--body-color);
+    color: var(--basic-text);
+}
+
+.offcanvasBtn{
+    color: var(--icon-color);
+}
+.toogleBtn{
+    background: none;
+    border: none;
+    color: var(--icon-color);
+    margin-left: 20px;
+}

@@ -1,0 +1,24 @@
+:root{
+    --body-color:white;
+    --bg-color:#080808;
+    --basic-text:black;
+    --text-color:black;
+    --icon-color:black;
+    --main-color:#4458dc;
+    --main-color2:#854fee;
+    --gradient-backcolor1:#854fee;
+    --gradient-backColor:#4458dc;   
+    --hover-color:rgba(77, 87, 222, 0.3);
+}
+body.dark_theme{
+    --body-color:black;
+    --bg-color:#f7d8d8;
+    --basic-text:white;
+    --text-color:white;
+    --icon-color:white;
+    --main-color:#4458dc;
+    --main-color2:#854fee;
+    --gradient-backcolor1:#854fee;
+    --gradient-backColor:#4458dc;   
+    --hover-color:rgba(77, 87, 222, 0.3);
+}
