@@ -13,7 +13,6 @@ body.dark_theme {
 }
 .home .card {
     border-style: none;
-    margin: 90px;
     background-color: var(--basic-color);
 }
 .home .text-uppercase.card-title.h5 {
@@ -161,6 +160,9 @@ button.text-uppercase.contactBtn.btn.btn-outline-primary:hover{
     font-weight: bolder;
     font-size: 25px;
 }
+.contact .row{
+    justify-content: space-around;
+}
 .contact .row .card{
     margin: 25px 0;
     background: linear-gradient(to right, var(--gradient-backcolor1), var(--gradient-backColor));
@@ -205,7 +207,6 @@ button.text-uppercase.contactBtn.btn.btn-outline-primary:hover{
     background-color: var(--body-color);
     color: var(--basic-text);
 }
-
 .offcanvasBtn{
     color: var(--icon-color);
 }
@@ -214,4 +215,134 @@ button.text-uppercase.contactBtn.btn.btn-outline-primary:hover{
     border: none;
     color: var(--icon-color);
     margin-left: 20px;
+}
+@media (max-width:997px) {
+    header .container .row{
+        justify-content: space-between;
+    } 
+    header .row .logo img{
+        width: 100px;
+        height: 100px;
+    }
+    .home .card-text{
+        font-size: 2.25rem;
+    }
+    .home img{
+        width: 300px;
+    }
+    button.text-uppercase.btn.btn-outline-primary{
+        padding: 10px 15px;
+    }
+    .services .card{
+        width: 45%;
+    }
+    .contact .col-4{
+        width: 100%;
+    }
+    .contact .col-4 .card{
+        width: 100%;
+    }
+    .contact .col-6{
+        width: 100%;
+    }
+}
+@media (max-width:769px) {
+    .container{
+        max-width: 670px;
+    }
+    header .row .logo img{
+        width: 80px;
+    }
+    .navLinks{
+        text-align: center;
+    }
+    .navLinks a{
+        padding: 5px;
+    }
+    .toogleBtn{
+        margin-left: 5px;
+    }
+    .home .col-5{
+        width: 100%;
+        text-align: center;
+    }
+    .home img{
+        display: none;
+    }
+    button.text-uppercase.btn.btn-outline-primary{
+        padding: 15px 50px;
+    }
+    .about .col-5{
+        width: 100%;
+    }
+}
+@media(max-width:575px){
+    .container{
+        max-width: 670px;
+    }
+    .home .card{
+        margin: 20px;
+    }
+    .about h1{
+        font-size: 2.75rem;
+    }
+    .about p{
+        margin: 15px;
+    }
+    .about p ~img{
+        width: 120px;
+        margin-left: 20px;
+    }
+    .services h1{
+        font-size: 2.25rem;
+    }
+    .services .card{
+        width: 85%;
+        margin: 15px;
+    }
+    .professionalSkills h2{
+        font-size: 2.25rem;
+    }
+}
+@media (max-width:540px) {
+    .navLinks{
+        text-align: end;
+    }
+    .navLinks a{
+        display: none;
+    }
+    .toogleBtn{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    button.text-uppercase.btn.btn-outline-primary{
+        width: 80%;
+        text-align: center;
+    }
+    .nav-tabs{
+        flex-wrap: nowrap;
+    }
+    .contact .row{
+        padding: 0 30px;
+    }
+    .contact .row h2{
+        font-size: 2.25rem;
+    }
+}
+@media (max-width:375px) {
+    .nav.nav-tabs.nav-fill {
+        display: grid;
+    }
+    .professionalSkills h2{
+        font-size: 1.80rem;
+        text-shadow: none
+    }
+    .experience h2{
+        font-size: 1.80rem;
+        text-shadow: none;
+        margin: 10px;
+    }
+    .contact .col-4{
+        display: none;
+    }
 }
