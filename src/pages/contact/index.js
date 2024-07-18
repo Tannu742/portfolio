@@ -26,7 +26,7 @@ const Contact = () => {
             </div>
             <div className='row'>
                 <div className='col-4'>
-                    <Card style={{ width: '18rem' }}>
+                    <Card>
                         <Card.Body>
                             <Card.Img variant="top" src={contact} />
                             <Card.Subtitle className="mb-2 text-muted"> Frontend Developer </Card.Subtitle>
