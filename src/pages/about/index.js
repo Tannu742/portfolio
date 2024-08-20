@@ -22,7 +22,7 @@ const About = () => {
                     <h3>Personal Information</h3>
                     <ol>
                         <li><span>Name : </span>Tanisha</li>
-                        <li><span>Age : </span>18</li>
+                        <li><span>Age : </span>19</li>
                         <li><span>Residence : </span>Delhi</li>
                         <li><span>Address : </span> Arjun park, Najafgarh</li>
                         <li><span>Email : </span>tanisharajput9575@gmail.com</li>
