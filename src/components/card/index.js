@@ -1,18 +1,14 @@
 import React from 'react';
 import { Card } from "react-bootstrap";
 
-const CardBox = ({className, title, img, text, footerText }) => {
+const CardBox = ({ className, year, title, para }) => {
     return (
         <Card className={className}>
-            <Card.Header>{title}</Card.Header>
+            <Card.Header>{year}</Card.Header>
+            <Card.Title>{title}</Card.Title>
             <Card.Body>
                 <blockquote className="blockquote mb-0">
-                    <p className="text-align-center">
-                        {' '}<img src={img} alt="" />{' '}
-                    </p>
-                    <footer className="blockquote-footer">
-                        {footerText}<cite title="Source Title">{text}</cite>
-                    </footer>
+                    <p>{para}</p>
                 </blockquote>
             </Card.Body>
         </Card>

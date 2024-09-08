@@ -16,7 +16,7 @@ const Skills = () => {
                         <Nav.Link onClick={() => setTab(tabs.education)} className={tab === tabs.education ? 'active' : ''} href="#" eventKey="link-1">Education</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link onClick={() => setTab(tabs.profession)} className={tab === tabs.profession ? 'active' : ''}eventKey="link-2"> Professional Skills</Nav.Link>
+                        <Nav.Link onClick={() => setTab(tabs.profession)} className={tab === tabs.profession ? 'active' : ''} eventKey="link-2"> Professional Skills</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link onClick={() => setTab(tabs.experience)} className={tab === tabs.experience ? 'active' : ''} eventKey="link-3">Experience</Nav.Link>
@@ -24,9 +24,9 @@ const Skills = () => {
                 </Nav>
             </div>
             <div>
-            { tab === tabs.education && <Education/> }
-            { tab === tabs.profession && <ProfessionalSkiils/> }
-            { tab === tabs.experience && <Experience/> }
+                {tab === tabs.education && <Education />}
+                {tab === tabs.profession && <ProfessionalSkiils />}
+                {tab === tabs.experience && <Experience />}
             </div>
         </div>
     );

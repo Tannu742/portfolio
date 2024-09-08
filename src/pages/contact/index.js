@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import contact from '../../assets/img/contact.jpg';
-import tanisha from '../../assets/img/img.png'
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
@@ -38,7 +37,7 @@ const Contact = () => {
                                 <ListGroup.Item><a href="mailto:tanisharajput9575@gmail.com"> tanisharajput9575@gmail.com</a></ListGroup.Item>
                             </ListGroup>
                         </Card.Body>
-                        <Card.Title> <img width={250} src={tanisha} alt="" /> </Card.Title>
+                        {/* <Card.Title> <img width={250} src={tanisha} alt="" /> </Card.Title> */}
                     </Card>
                 </div>
                 <div className='col-6'>

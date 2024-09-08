@@ -1,348 +1,192 @@
 @import url('main.css');
-body.dark_theme {
-    background: var(--body-color);
+.banner {
+    background-color: var(--bg-color);
+    color: var(--basic-text);
 }
-.navLinks a {
+.logo {
+    color: var(--basic-text);
+    font-weight: 700;
+}
+.HeadLinks {
     color: var(--basic-text);
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: 500;
     padding: 10px;
 }
 .navLinks a.active {
-    color: var(--main-color);
-}
-.home .card {
-    border-style: none;
-    background-color: var(--basic-color);
-}
-.home .text-uppercase.card-title.h5 {
-    color: var(--main-color);
-}
-.home .card-text{
-    font-size: 3.25rem;
-    font-weight: 800;
-    color: var(--main-color2);
-}
-button.text-uppercase.btn.btn-outline-primary {
-    background: linear-gradient(to right, var(--gradient-backcolor1), var(--gradient-backColor));
-    color: white;
-    padding: 10px 35px;
-    font-weight: 700;
-    margin: 10px;
-}
-button.text-uppercase.btn.btn-outline-primary:hover {
-    background: var(--basic-color);
-    color: var(--gradient-backcolor1);
-    border: 2px solid var(--gradient-backColor);
-}
-button.text-uppercase.contactBtn.btn.btn-outline-primary:hover{
-    color: #fff;
-}
-.about h1{
-    font-size: 3.25rem;
-    font-weight: 800;
-    color: var(--main-color2);
-    text-shadow: 2px 2px 1px var(--main-color);
-}
-.about h3{
-    font-weight: bolder;
-    font-style: oblique;
-    font-family: math;
-    margin-top: 20px;
-    color: var(--basic-text);
-}
-.about p{
-    font-family: serif;
-    font-size: 18px;
-    color: var(--basic-text);
-}
-.about ol li{
-    list-style: none;
-    padding-bottom: 10px;
-    color: var(--basic-text);
-}
-.about ol li span{
-    color: var(--main-color2);
-    font-weight: bolder;
-    margin-right: 10px;
-    letter-spacing: 0.5px;
-}
-.services h1 {
-    font-size: 3.25rem;
-    font-weight: 800;
-    color: var(--main-color2);
-    text-shadow: 2px 2px 1px var(--main-color);
-}
-.services p{
-    font-weight: bolder;
-    font-style: oblique;
-    font-family: math;
-    margin: 10px 0 25px;
-    color: var(--basic-text);
-}
-.services .card{
-    margin-bottom: 25px;
-    width: 22%;
-    background-color: var(--basic-color);
-}
-.services .card .card-header{
-    color: var(--main-color);
-    font-weight: bolder;
-}
-.services .card:hover{
-    box-shadow: 0px 15px 30px var(--hover-color);
-}
-.services .card:hover cite{
-    color: var(--basic-text);
-}
-.nav-tabs .nav-link{
-    font-weight: bolder;
-}
-.skills .nav.nav-tabs.nav-fill a{
-    background-color: var(--basic-color);
-    color: var(--basic-text);
-}
-.skills .nav.nav-tabs.nav-fill a.active{
-    color: var(--main-color);
-}
-.container.professionalSkills{
-    margin: 40px 20px;
-}
-.professionalSkills h2{
-    font-size: 3.25rem;
-    font-weight: 800;
-    color: var(--main-color2);
-    text-shadow: 2px 2px 1px var(--main-color);
-}
-.professionalSkills ol li{
-    color: var(--basic-text);
-    list-style: none;
-    margin-bottom: 10px;
-}
-.professionalSkills ol li span{
-    font-weight: bolder;
-    font-family: monospace;
-    font-size: 18px;
-    margin: 10px 0 25px;
-}
-.progress-bar.progress-bar-animated.progress-bar-striped{
-    background-color: var(--main-color2);
-    transition: 3s;
-}
-.Education .card{
-    margin: 40px 20px;
-    background-color: var(--basic-color);
-}
-.Education .card .card-header{
-    color: var(--main-color);
-    font-weight: bolder;
-}
-.Education .card:hover{
-    box-shadow: 0px 15px 30px var(--hover-color);
-}
-.Education .card:hover footer{
-    color: var(--basic-text);
-}
-.experience h2{
-    font-size: 3.25rem;
-    font-weight: 800;
-    color: var(--main-color2);
-    text-shadow: 2px 2px 1px var(--main-color);
-}
-.contact h2{
-    font-size: 3.25rem;
-    font-weight: 800;
-    color: var(--main-color2);
-    text-shadow: 2px 2px 1px var(--main-color);
-}
-.contact span{
-    color: var(--basic-text);
-    font-weight: bolder;
-    font-size: 25px;
-}
-.contact .row{
-    justify-content: space-around;
-}
-.contact .row .card{
-    margin: 25px 0;
-    background: linear-gradient(to right, var(--gradient-backcolor1), var(--gradient-backColor));
-    color: var(--basic-text);
-}
-.contact .row .card .card-img-top{
-    padding-bottom: 20px;
-}
-.contact .row .card .card-text{
-    font-weight: bolder;
-    font-family: math;
-    margin: 10px;
-}
-.contact .row .card a{
-    text-decoration: none;
-    color: var(--main-color2);
-    font-weight: 600;
-}
-.contact .col-6{
-    margin: 25px 0;
-    border: #fff;
-}
-.contact .col-6 label.form-label{
-    font-weight: bolder;
-}
-.offLayLinks a{
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    background: linear-gradient(to right, var(--gradient-backcolor1), var(--gradient-backColor));
     color: var(--text-color);
-    padding: 10px 35px;
-    font-weight: 700;
-    margin: 10px;
+    border-bottom: 2px solid var(--text-color);
 }
-.offLayLinks a:hover{
-    background: var(--basic-color);
-    color: var(--gradient-backcolor1);
-    border: 2px solid var(--gradient-backColor);
+.home {
+    background-color: var(--bg-color);
 }
-.offcanvas.offcanvas-start.show{
-    background-color: var(--body-color);
+.slide .carousel-control-prev,
+.slide .carousel-control-next,
+.slide .carousel-indicators {
+    display: none;
+}
+.slide {
     color: var(--basic-text);
 }
-.offcanvasBtn{
-    color: var(--icon-color);
+.slide .carousel-item .col-6 {
+    text-align: left;
+    align-content: center;
 }
-.toogleBtn{
-    background: none;
+.slide .carousel-item .col-6 h1 {
+    font-size: 80px;
+    font-family: ui-monospace;
+    font-weight: 800;
+}
+.slide .carousel-item .col-6 h6 {
+    color: var(--text-color);
+}
+.slide .carousel-item .col-6 h1 span {
+    color: var(--text-color);
+}
+button.btn.btn-primary.btn-sm {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 15px 30px;
+    border-radius: 30px;
     border: none;
-    color: var(--icon-color);
-    margin-left: 20px;
 }
-@media (max-width:997px) {
-    header .container .row{
-        justify-content: space-between;
-    } 
-    header .row .logo img{
-        width: 100px;
-        height: 100px;
-    }
-    .home .card-text{
-        font-size: 2.25rem;
-    }
-    .home img{
-        width: 300px;
-    }
-    button.text-uppercase.btn.btn-outline-primary{
-        padding: 10px 15px;
-    }
-    .services .card{
-        width: 45%;
-    }
-    .contact .col-4{
-        width: 100%;
-    }
-    .contact .col-4 .card{
-        width: 100%;
-    }
-    .contact .col-6{
-        width: 100%;
-    }
+button.btn.btn-secondary.btn-sm {
+    background-color: transparent;
+    color: var(--basic-text);
+    padding: 15px 30px;
+    border-radius: 30px;
+    border-color: var(--basic-text);
 }
-@media (max-width:769px) {
-    .container{
-        max-width: 670px;
-    }
-    header .row .logo img{
-        width: 80px;
-    }
-    .navLinks{
-        text-align: center;
-    }
-    .navLinks a{
-        padding: 5px;
-    }
-    .toogleBtn{
-        margin-left: 5px;
-    }
-    .home .col-5{
-        width: 100%;
-        text-align: center;
-    }
-    .home img{
-        display: none;
-    }
-    button.text-uppercase.btn.btn-outline-primary{
-        padding: 15px 50px;
-    }
-    .about .col-5{
-        width: 100%;
-    }
+.about h1 {
+    font-size: 45px;
+    font-family: system-ui;
+    font-weight: 700;
 }
-@media(max-width:575px){
-    .container{
-        max-width: 670px;
-    }
-    .home .card{
-        margin: 20px;
-    }
-    .about h1{
-        font-size: 2.75rem;
-    }
-    .about p{
-        margin: 15px;
-    }
-    .about p ~img{
-        width: 120px;
-        margin-left: 20px;
-    }
-    .services h1{
-        font-size: 2.25rem;
-    }
-    .services .card{
-        width: 85%;
-        margin: 15px;
-    }
-    .professionalSkills h2{
-        font-size: 2.25rem;
-    }
+.head p {
+    color: var(--text-color2);
+    font-family: monospace;
 }
-@media (max-width:540px) {
-    .navLinks{
-        text-align: end;
-    }
-    .navLinks a{
-        display: none;
-    }
-    .toogleBtn{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    button.text-uppercase.btn.btn-outline-primary{
-        width: 80%;
-        text-align: center;
-    }
-    .nav-tabs{
-        flex-wrap: nowrap;
-    }
-    .contact .row{
-        padding: 0 30px;
-    }
-    .contact .row h2{
-        font-size: 2.25rem;
-    }
+.head {
+    position: relative;
 }
-@media (max-width:375px) {
-    .nav.nav-tabs.nav-fill {
-        display: grid;
-    }
-    .professionalSkills h2{
-        font-size: 1.80rem;
-        text-shadow: none
-    }
-    .experience h2{
-        font-size: 1.80rem;
-        text-shadow: none;
-        margin: 10px;
-    }
-    .contact .col-4{
-        display: none;
-    }
+.head h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(255, 255, 255, 0.1);
+    font-weight: 900;
+    font-size: 80px;
+}
+.about_head ul span {
+    font-weight: 800;
+    color: var(--basic-text);
+    margin-right: 20px;
+}
+.about_head ul li {
+    color: var(--text-color2);
+    font-size: 20px;
+}
+.download {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 15px 30px;
+    border-radius: 30px;
+    width: 30%;
+}
+.download a {
+    text-decoration: none;
+    color: var(--bg-color);
+}
+.cardBox.card {
+    background: rgba(255, 255, 255, 0.1);
+    position:relative;
+    margin: 20px 0;
+    height: 200px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 100px 0 50px rgba(0, 0, 0, 0.5);
+}
+.cardBox.card .card-header {
+    color: var(--text-color);
+    font-weight: 800;
+}
+.cardBox.card .card-title {
+    color: var(--basic-text);
+}
+.cardBox.card .card-body {
+    color: var(--text-color2);
+}
+.cardBox.card:hover {
+    z-index: 1111;
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+}
+.testimotionals .card{
+    background: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    width: 31%;
+    position:relative;
+    overflow: hidden;
+    margin: 20px 0;
+    padding: 20px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 100px 0 50px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+.testimotionals .card .layer {
+  z-index:1;
+  position:absolute;
+  top:calc(100% - 2px);
+  height:100%;
+  width:100%;
+  left:0;
+  background:linear-gradient(to left , orange, tomato);
+  transition:0.5s; 
+}
+.testimotionals .card .content {
+    z-index:2; 
+    position:relative;
+    color: var(--text-color);
+}
+.testimotionals .card:hover .content{
+    color: var(--bg-color);
+}
+.testimotionals .card:hover .layer{
+    top:0;
+}
+.testimotionals .card .content p {
+    font-size:14px;
+    line-height:24px;
+    color:var(--text-color2); 
+}
+.testimotionals .card:hover p{
+    color:var(--basic-text); 
+}
+.skills ol{
+    text-align: left;
+}
+.progress .progress-bar {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    font-weight: 700;
+}
+.contact_list{
+    text-align: -webkit-center;
+}
+.contact_list .icon{
+    font-size: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    color: var(--text-color);
+}
+.contact_list a{
+    color: var(--text-color2);
+    text-decoration: none;
 }
