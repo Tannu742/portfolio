@@ -2,8 +2,8 @@ import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import { Col, Row } from 'react-bootstrap';
-import bg_1 from '../../assets/img/bg_1.png';
-import bg_2 from '../../assets/img/bg_2.png';
+import bg_1 from '../../assets/img/ttt.png';
+import bg_2 from '../../assets/img/ppp.png';
 const Slide = () => {
     const [index, setIndex] = useState(0);
 
@@ -11,7 +11,7 @@ const Slide = () => {
         setIndex(selectedIndex);
     };
     return (
-        <Carousel activeIndex={index} onSelect={handleSelect} className='text-center'>
+        <Carousel activeIndex={index} onSelect={handleSelect} interval={3000} className='text-center'>
             <Carousel.Item>
                 <Row>
                     <Col className='col-6 p-5'>
@@ -26,7 +26,7 @@ const Slide = () => {
                             </Button>
                         </div>
                     </Col>
-                    <Col className='col-6'>
+                    <Col className='col-6 p-5'>
                         <img width={400} src={bg_1} alt="" />
                     </Col>
                 </Row>
@@ -45,7 +45,7 @@ const Slide = () => {
                             </Button>
                         </div>
                     </Col>
-                    <Col className='col-6'>
+                    <Col className='col-6 p-5'>
                         <img width={400} src={bg_2} alt=""  />
                     </Col>
                 </Row>

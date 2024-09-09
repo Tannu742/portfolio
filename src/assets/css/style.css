@@ -1,4 +1,9 @@
 @import url('main.css');
+header{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
 .banner {
     background-color: var(--bg-color);
     color: var(--basic-text);
@@ -7,7 +12,7 @@
     color: var(--basic-text);
     font-weight: 700;
 }
-.HeadLinks {
+.navLinks a {
     color: var(--basic-text);
     text-decoration: none;
     font-weight: 500;
@@ -119,7 +124,6 @@ button.btn.btn-secondary.btn-sm {
     color: var(--text-color2);
 }
 .cardBox.card:hover {
-    z-index: 1111;
     transform: perspective(2000px) rotate(-10deg);
     box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
 }

@@ -1,7 +1,15 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Links } from '../../constants/data';
+import { handleScroll } from '../../utils';
+
 const Header = () => {
+    const links = useRef([]);
+
+    useEffect(() => {
+        handleScroll(links.current);
+    }, []);
     return (
         <header className="header banner">
             <Container>
@@ -10,13 +18,13 @@ const Header = () => {
                         <h5 className='fw-bolder'>TANISHA</h5>
                     </Col>
                     <Col className='col-9 navLinks align-content-center text-align-end'>
-                        <NavLink to={'/'} className={'HeadLinks'}>Home</NavLink>
-                        <NavLink to={'/about'} className={'HeadLinks'}>About</NavLink>
-                        <NavLink to={'/Resume'} className={'HeadLinks'}>Resume</NavLink>
-                        <NavLink to={'/services'} className={'HeadLinks'}>Services</NavLink>
-                        <NavLink to={'/skills'} className={'HeadLinks'}>Skills</NavLink>
-                        <NavLink to={'/projects'} className={'HeadLinks'}>Projects</NavLink>
-                        <NavLink to={'/contact'} className={'HeadLinks'}>Contact</NavLink>
+                        {
+                            Links.map((item, i) => {
+                                return (
+                                    <Link ref={el => links.current[i] = el} to={item.path} key={item.id} className='head_links'>{item.link}</Link>
+                                )
+                            })
+                        }
                     </Col>
                 </Row>
             </Container>

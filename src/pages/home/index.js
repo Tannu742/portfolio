@@ -1,25 +1,27 @@
 import { Col, Container, ProgressBar, Row } from 'react-bootstrap';
-import Slide from '../../components/slide';
-import bg_1 from '../../assets/img/bg_1.png';
-import pdf from '../../assets/img/resume1.pdf';
-import { card, contact, testimonalCard } from '../../constants/data';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import CardBox from '../../components/card';
 import TestimonalCard from '../../components/testimonals';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
+import Slide from '../../components/slide';
+import me from '../../assets/img/pl.png';
 
+import { card, contact, testimonalCard } from '../../constants/data';
+
+import pdf from '../../assets/img/resume1.pdf';
 
 const Home = () => {
     return (
-        <main>
-            <section className='home p-4'>
+        <main role='main'>
+            <section id='home' className='home p-4'>
                 <Slide />
             </section>
-            <section className='about banner p-4'>
+            <section id='about' className='about banner p-4'>
                 <Container>
                     <Row>
                         <Col>
-                            <img width={400} src={bg_1} alt="" />
+                            <img width={400} src={me} alt="" />
                         </Col>
                         <Col>
                             <div className='head'>
@@ -45,7 +47,7 @@ const Home = () => {
                     </Row>
                 </Container>
             </section>
-            <section className='resume banner text-center p-4'>
+            <section id='resume' className='resume banner text-center p-4'>
                 <Container>
                     <Row className='head text-center'>
                         <h1>My Resume</h1>
@@ -61,7 +63,7 @@ const Home = () => {
                     </Row>
                 </Container>
             </section>
-            <section className='services banner text-center p-4'>
+            <section id='services' className='services banner text-center p-4'>
                 <Container>
                     <Row className='head'>
                         <h1>My Services</h1>
@@ -77,7 +79,7 @@ const Home = () => {
                     </Row>
                 </Container>
             </section>
-            <section className='skills banner text-center p-4'>
+            <section id='skills' className='skills banner text-center p-4'>
                 <Container>
                     <Row className='head'>
                         <h1>My Skills</h1>
@@ -122,7 +124,7 @@ const Home = () => {
                     </Row>
                 </Container>
             </section>
-            <section className='projects banner text-center p-4'>
+            <section id='projects' className='projects banner text-center p-4'>
                 <Container>
                     <Row className='head'>
                         <h1>Our Projects</h1>
@@ -136,7 +138,7 @@ const Home = () => {
                     </Row>
                 </Container>
             </section>
-            <section className='contact banner text-center p-4'>
+            <section id='contact' className='contact banner text-center p-4'>
                 <Container>
                     <Row className='head'>
                         <h1>Contact Me</h1>
@@ -152,7 +154,7 @@ const Home = () => {
                                     <div className='col contact_list' key={item.id}>
                                         <div className='icon align-content-center my-3'><FontAwesomeIcon icon={item.icon} /></div>
                                         <h5>{item.title}</h5>
-                                        <Link to={item.link} rel='noreferrer'  target={item.id === 4 ? "_blank" : "_self"}>{item.para}</Link>
+                                        <Link to={item.link} rel='noreferrer' target={item.id === 4 ? "_blank" : "_self"}>{item.para}</Link>
                                     </div>
                                 )
                             })
