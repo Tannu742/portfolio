@@ -1,6 +1,4 @@
-import Card from 'react-bootstrap/Card';
-import home from '../../assets/img/home.png';
-import { Button, Col, Container, ProgressBar, Row } from 'react-bootstrap';
+import { Col, Container, ProgressBar, Row } from 'react-bootstrap';
 import Slide from '../../components/slide';
 import bg_1 from '../../assets/img/bg_1.png';
 import pdf from '../../assets/img/resume1.pdf';
