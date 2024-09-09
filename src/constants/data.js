@@ -19,3 +19,12 @@ export const contact = [
     { id: 3, title: 'EMAIL ADDRESS', para: 'tanisharajput@gmail.com', icon: faPaperPlane, link:'mailto:tanisharajput@gmail.com' },
     { id: 4, title: 'WEBSITE', para: 'https://lively-biscuit-c419b3.netlify.app', icon: faEarthAmerica, link:'https://lively-biscuit-c419b3.netlify.app' },
 ]
+export const Links = [
+    {id:1, path:'#home', link:'Home'},
+    {id:2, path:'#about', link:'About'},
+    {id:3, path:'#resume', link:'Resume'},
+    {id:4, path:'#services', link:'Services'},
+    {id:5, path:'#skills', link:'Skills'},
+    {id:6, path:'#projects', link:'Projects'},
+    {id:7, path:'#contact', link:'Contact'}
+]
