@@ -6,6 +6,9 @@ import { card, contact, testimonalCard } from '../../constants/data';
 import CardBox from '../../components/card';
 import TestimonalCard from '../../components/testimonals';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
+
+
 const Home = () => {
     return (
         <main>
@@ -149,7 +152,7 @@ const Home = () => {
                                     <div className='col contact_list' key={item.id}>
                                         <div className='icon align-content-center my-3'><FontAwesomeIcon icon={item.icon} /></div>
                                         <h5>{item.title}</h5>
-                                        <a href={item.link} target="_blank" >{item.para}</a>
+                                        <Link to={item.link} rel='noreferrer'  target={item.id === 4 ? "_blank" : "_self"}>{item.para}</Link>
                                     </div>
                                 )
                             })

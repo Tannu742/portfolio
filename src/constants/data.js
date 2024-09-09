@@ -15,7 +15,7 @@ export const testimonalCard = [
 ]
 export const contact = [
     { id: 1, title: 'ADDRESS', para: 'Najafgarh, New Delhi', icon: faMapLocation, link:'' },
-    { id: 2, title: 'CONTACT NUMBER', para: '+91 7042429575', icon: faPhone, link:'tel:' },
-    { id: 3, title: 'EMAIL ADDRESS', para: 'tanisharajput@gmail.com', icon: faPaperPlane, link:'mailto:' },
-    { id: 4, title: 'WEBSITE', para: 'https://lively-biscuit-c419b3.netlify.app', icon: faEarthAmerica, link:'' },
+    { id: 2, title: 'CONTACT NUMBER', para: '+91 7042429575', icon: faPhone, link:'tel:+91 7042429575' },
+    { id: 3, title: 'EMAIL ADDRESS', para: 'tanisharajput@gmail.com', icon: faPaperPlane, link:'mailto:tanisharajput@gmail.com' },
+    { id: 4, title: 'WEBSITE', para: 'https://lively-biscuit-c419b3.netlify.app', icon: faEarthAmerica, link:'https://lively-biscuit-c419b3.netlify.app' },
 ]
