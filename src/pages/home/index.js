@@ -152,7 +152,7 @@ const Home = () => {
                                     <div className='col contact_list' key={item.id}>
                                         <div className='icon align-content-center my-3'><FontAwesomeIcon icon={item.icon} /></div>
                                         <h5>{item.title}</h5>
-                                        <Link to={item.link} target={item.id === 4 ? "_blank" : "_self"}>{item.para}</Link>
+                                        <Link to={item.link} rel='noreferrer'  target={item.id === 4 ? "_blank" : "_self"}>{item.para}</Link>
                                     </div>
                                 )
                             })
