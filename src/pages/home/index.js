@@ -149,7 +149,7 @@ const Home = () => {
                                     <div className='col contact_list' key={item.id}>
                                         <div className='icon align-content-center my-3'><FontAwesomeIcon icon={item.icon} /></div>
                                         <h5>{item.title}</h5>
-                                        <a href={item.link} target="_blank" rel="noreferrer" >{item.para}</a>
+                                        <a href={item.link} target="_blank" rel="noopener noreferrer" >{item.para}</a>
                                     </div>
                                 )
                             })
