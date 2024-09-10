@@ -4,6 +4,25 @@ header{
     z-index: 99;
     width: 100%;
 }
+.footer{
+    background-color: var(--bg-color);
+    color: var(--text-color2);
+}
+.footer h5{
+    color: var(--basic-text);
+}
+.footer .icon{
+    color: var(--basic-text);
+    margin-right: 20px;
+}
+.footer li a{
+    text-decoration: none;
+    color: var(--text-color2);
+}
+.footerFoot{
+    color: var(--basic-text);
+    background-color: var(--bg-color);
+}
 .banner {
     background-color: var(--bg-color);
     color: var(--basic-text);
