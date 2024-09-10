@@ -6,10 +6,15 @@ import CardBox from '../../components/card';
 import TestimonalCard from '../../components/testimonals';
 import Slide from '../../components/slide';
 import me from '../../assets/img/pl.png';
+import pdf from '../../assets/img/resume1.pdf';
+import aa from '../../assets/img/aa.png';
+import bb from '../../assets/img/bb.webp';
+import cc from '../../assets/img/cc.png';
+import dd from '../../assets/img/dd.png';
+import ee from '../../assets/img/ee.png';
 
 import { card, contact, testimonalCard } from '../../constants/data';
 
-import pdf from '../../assets/img/resume1.pdf';
 
 const Home = () => {
     return (
@@ -30,12 +35,12 @@ const Home = () => {
                                 <p className='py-4'>Passionate frontend developer crafting seamless and engaging
                                     user experiences through innovative design and cutting-edge technology.</p>
                                 <ul className='list-unstyled px-md-0 px-2'>
-                                    <li className='py-2'><span>Name : </span>Tanisha</li>
-                                    <li className='py-2'><span>Age : </span>19</li>
-                                    <li className='py-2'><span>Residence : </span>Delhi</li>
-                                    <li className='py-2'><span>Address : </span>Najafgarh, New Delhi-43</li>
-                                    <li className='py-2'><span>Email : </span>tanisharajput9575@gmail.com</li>
-                                    <li className='py-2'><span>Phone : </span> 7042429575</li>
+                                    <li className='py-2'><span className='fw-bold'>Name : </span>Tanisha</li>
+                                    <li className='py-2'><span className='fw-bold'>Age : </span>19</li>
+                                    <li className='py-2'><span className='fw-bold'>Residence : </span>Delhi</li>
+                                    <li className='py-2'><span className='fw-bold'>Address : </span>Najafgarh, New Delhi-43</li>
+                                    <li className='py-2'><span className='fw-bold'>Email : </span>tanisharajput9575@gmail.com</li>
+                                    <li className='py-2'><span className='fw-bold'>Phone : </span> 7042429575</li>
                                 </ul>
                                 <div className='download'>
                                     <a href={pdf} download="Resume.pdf">
@@ -133,9 +138,50 @@ const Home = () => {
                             Passionate frontend developer crafting seamless and engaging
                             user experiences through innovative design and cutting-edge technology.</p>
                     </Row>
-                    <Row>
-
+                    <Row className='m-2'>
+                        <Col className='projectBox'>
+                            <img className='image' src={aa} width={450} alt="" />
+                            <div className='middle'>
+                                <div className="text">
+                                    <Link to={'https://glintsite.netlify.app/'}>GLINT SITE</Link>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col className='projectBox'>
+                            <img className="image" src={bb} width={600} alt="" />
+                            <div className='middle'>
+                                <div className="text">
+                                    <Link to={'https://instu.netlify.app/'}> INSTARGRAM SITE</Link>
+                                </div>
+                            </div>
+                        </Col>
                     </Row>
+                    <Row className='m-2'>
+                        <Col className='projectBox'>
+                            <img className='image' src={cc} width={500} alt="" />
+                            <div className='middle'>
+                                <div className="text">
+                                    <Link to={'https://spontaneous-cheesecake-604a3d.netlify.app/'}>VIMEO SITE</Link>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col className='projectBox'>
+                            <img className='image' src={dd} width={550} alt="" />
+                            <div className='middle'>
+                                <div className="text">
+                                    <Link to={'https://burgerfast.netlify.app/'}>BURGER SITE</Link>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                    <Col className='m-2 projectBox'>
+                        <img className='image' width={550} src={ee} alt="" />
+                        <div className='middle'>
+                            <div className="text">
+                                <Link to={'https://shoppingshirt.netlify.app/'}>SHOPPING SITE</Link>
+                            </div>
+                        </div>
+                    </Col>
                 </Container>
             </section>
             <section id='contact' className='contact banner text-center p-4'>
