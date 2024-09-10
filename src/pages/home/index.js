@@ -143,7 +143,7 @@ const Home = () => {
                             <img className='image' src={aa} width={450} alt="" />
                             <div className='middle'>
                                 <div className="text">
-                                    <Link to={'https://glintsite.netlify.app/'}>GLINT SITE</Link>
+                                    <Link rel='noreferrer' target='_blank' to={'https://glintsite.netlify.app/'}>GLINT SITE</Link>
                                 </div>
                             </div>
                         </Col>
@@ -151,7 +151,7 @@ const Home = () => {
                             <img className="image" src={bb} width={600} alt="" />
                             <div className='middle'>
                                 <div className="text">
-                                    <Link to={'https://instu.netlify.app/'}> INSTARGRAM SITE</Link>
+                                    <Link rel='noreferrer' target='_blank' to={'https://instu.netlify.app/'}> INSTARGRAM SITE</Link>
                                 </div>
                             </div>
                         </Col>
@@ -161,7 +161,7 @@ const Home = () => {
                             <img className='image' src={cc} width={500} alt="" />
                             <div className='middle'>
                                 <div className="text">
-                                    <Link to={'https://spontaneous-cheesecake-604a3d.netlify.app/'}>VIMEO SITE</Link>
+                                    <Link rel='noreferrer' target='_blank' to={'https://spontaneous-cheesecake-604a3d.netlify.app/'}>VIMEO SITE</Link>
                                 </div>
                             </div>
                         </Col>
@@ -169,7 +169,7 @@ const Home = () => {
                             <img className='image' src={dd} width={550} alt="" />
                             <div className='middle'>
                                 <div className="text">
-                                    <Link to={'https://burgerfast.netlify.app/'}>BURGER SITE</Link>
+                                    <Link rel='noreferrer' target='_blank' to={'https://burgerfast.netlify.app/'}>BURGER SITE</Link>
                                 </div>
                             </div>
                         </Col>
@@ -178,7 +178,7 @@ const Home = () => {
                         <img className='image' width={550} src={ee} alt="" />
                         <div className='middle'>
                             <div className="text">
-                                <Link to={'https://shoppingshirt.netlify.app/'}>SHOPPING SITE</Link>
+                                <Link rel='noreferrer' target='_blank' to={'https://shoppingshirt.netlify.app/'}>SHOPPING SITE</Link>
                             </div>
                         </div>
                     </Col>

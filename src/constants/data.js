@@ -11,12 +11,12 @@ export const testimonalCard = [
     { id: 3, title: 'Interactive Features', para: 'Custom animations and transitions and Interactive elements (e.g., forms, sliders, modals)' },
     { id: 4, title: 'Maintenance and Support', para: 'Ongoing website maintenance and Bug fixing and updates' },
     { id: 5, title: 'SEO Optimization', para: 'On-page SEO best practices and Implementation of SEO-friendly design elements' },
-    { id: 6, title: 'Performance Optimization:', para: 'Pursuing higher education form Delhi University.' },
+    { id: 6, title: 'Performance Optimization', para: 'Pursuing higher education form Delhi University.' },
 ]
 export const contact = [
     { id: 1, title: 'ADDRESS', para: 'Najafgarh, New Delhi', icon: faMapLocation, link:'' },
     { id: 2, title: 'CONTACT NUMBER', para: '+91 7042429575', icon: faPhone, link:'tel:+91 7042429575' },
-    { id: 3, title: 'EMAIL ADDRESS', para: 'tanisharajput@gmail.com', icon: faPaperPlane, link:'mailto:tanisharajput@gmail.com' },
+    { id: 3, title: 'EMAIL ADDRESS', para: 'tanisharajput@gmail.com', icon: faPaperPlane, link:'mailto:tanisharajput9575@gmail.com' },
     { id: 4, title: 'WEBSITE', para: 'https://lively-biscuit-c419b3.netlify.app', icon: faEarthAmerica, link:'https://lively-biscuit-c419b3.netlify.app' },
 ]
 export const Links = [
