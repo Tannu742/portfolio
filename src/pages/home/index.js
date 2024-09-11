@@ -25,7 +25,7 @@ const Home = () => {
             <section id='about' className='about banner p-4'>
                 <Container>
                     <Row>
-                        <Col>
+                        <Col className='aboutImg'>
                             <img width={400} src={me} alt="" />
                         </Col>
                         <Col>
@@ -42,7 +42,7 @@ const Home = () => {
                                     <li className='py-2'><span className='fw-bold'>Email : </span>tanisharajput9575@gmail.com</li>
                                     <li className='py-2'><span className='fw-bold'>Phone : </span> 7042429575</li>
                                 </ul>
-                                <div className='download'>
+                                <div className='download text-center'>
                                     <a href={pdf} download="Resume.pdf">
                                         Download CV
                                     </a>
@@ -61,9 +61,9 @@ const Home = () => {
                             Passionate frontend developer crafting seamless and engaging
                             user experiences through innovative design and cutting-edge technology.</p>
                     </Row>
-                    <Row>
+                    <Row className='justify-content-between'>
                         {
-                            card.map((item) => <CardBox key={item.id} className={'col m-2 cardBox'} para={item.para} title={item.title} year={item.year} />)
+                            card.map((item) => <CardBox key={item.id} className={'col-3 m-2 cardBox'} para={item.para} title={item.title} year={item.year} />)
                         }
                     </Row>
                 </Container>
@@ -140,7 +140,7 @@ const Home = () => {
                     </Row>
                     <Row className='m-2'>
                         <Col className='projectBox'>
-                            <img className='image' src={aa} width={450} alt="" />
+                            <img className='image imgA' src={aa} width={450} alt="" />
                             <div className='middle'>
                                 <div className="text">
                                     <Link rel='noreferrer' target='_blank' to={'https://glintsite.netlify.app/'}>GLINT SITE</Link>
@@ -148,7 +148,7 @@ const Home = () => {
                             </div>
                         </Col>
                         <Col className='projectBox'>
-                            <img className="image" src={bb} width={600} alt="" />
+                            <img className="image imgB" src={bb} width={600} alt="" />
                             <div className='middle'>
                                 <div className="text">
                                     <Link rel='noreferrer' target='_blank' to={'https://instu.netlify.app/'}> INSTARGRAM SITE</Link>
@@ -158,7 +158,7 @@ const Home = () => {
                     </Row>
                     <Row className='m-2'>
                         <Col className='projectBox'>
-                            <img className='image' src={cc} width={500} alt="" />
+                            <img className='image imgC' src={cc} width={500} alt="" />
                             <div className='middle'>
                                 <div className="text">
                                     <Link rel='noreferrer' target='_blank' to={'https://spontaneous-cheesecake-604a3d.netlify.app/'}>VIMEO SITE</Link>
@@ -166,7 +166,7 @@ const Home = () => {
                             </div>
                         </Col>
                         <Col className='projectBox'>
-                            <img className='image' src={dd} width={550} alt="" />
+                            <img className='image imgD' src={dd} width={550} alt="" />
                             <div className='middle'>
                                 <div className="text">
                                     <Link rel='noreferrer' target='_blank' to={'https://burgerfast.netlify.app/'}>BURGER SITE</Link>
@@ -175,7 +175,7 @@ const Home = () => {
                         </Col>
                     </Row>
                     <Col className='m-2 projectBox'>
-                        <img className='image' width={550} src={ee} alt="" />
+                        <img className='image imgE' width={550} src={ee} alt="" />
                         <div className='middle'>
                             <div className="text">
                                 <Link rel='noreferrer' target='_blank' to={'https://shoppingshirt.netlify.app/'}>SHOPPING SITE</Link>
@@ -197,7 +197,7 @@ const Home = () => {
                         {
                             contact.map((item) => {
                                 return (
-                                    <div className='col contact_list' key={item.id}>
+                                    <div className='col-3 contact_list' key={item.id}>
                                         <div className='icon align-content-center my-3'><FontAwesomeIcon icon={item.icon} /></div>
                                         <h5>{item.title}</h5>
                                         <Link to={item.link} rel='noreferrer' target={item.id === 4 ? "_blank" : "_self"}>{item.para}</Link>

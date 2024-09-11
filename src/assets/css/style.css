@@ -125,7 +125,7 @@ button.btn.btn-secondary.btn-sm {
     background: rgba(255, 255, 255, 0.1);
     position:relative;
     margin: 20px 0;
-    height: 200px;
+    /* height: 200px; */
     transform-style: preserve-3d;
     cursor: pointer;
     transform: perspective(2000px);
@@ -246,4 +246,145 @@ button.btn.btn-secondary.btn-sm {
 .text a{
     text-decoration: none;
     color: var(--basic-text);
+}
+@media(max-width:1200px){
+    .imgA{
+        width: 400px;
+    }
+    .imgB{
+        width: 435px;
+    }
+    .imgC{
+        width: 440px;
+    }
+    .imgD{
+        width: 430px;
+    }
+    .download{
+        width: 35%;
+    }
+}
+@media(max-width:1025px){
+    .slide .carousel-item .col-6 h1{
+        font-size: 56px;
+    }
+    .download{
+        width:35%;
+    }
+    .cardBox.card{
+        width: 30%;
+    }
+    .imgA{
+        width: 400px;
+    }
+    .imgB{
+        width: 435px;
+    }
+    .imgC{
+        width: 440px;
+    }
+    .imgD{
+        width: 430px;
+    }
+    .resume .card{
+        width: 30%;
+    }
+}
+@media(max-width:913px){
+    .download{
+        width: 65%;
+    }
+    .testimotionals .card{
+        width: 47%;
+    }
+    .projectBox img{
+        width: 700px;
+    }
+    .resume .col-3{
+        width: 100%;
+    }
+}
+@media(max-width:997px){
+    .download{
+        width: 60%;
+    }
+    .resume .col-3{
+        width: 100%;
+    }
+    .testimotionals .card{
+        width: 47%;
+    }
+    .projectBox img{
+        width: 700px;
+        padding: 10px 0;
+    }
+}
+@media(max-width:854px){
+    .slide .carousel-item .col-6 h1{
+        font-size: 50px;
+    }
+    .download{
+        width: 60%;
+    }
+    .testimotionals .card{
+        width: 45%;
+    }
+    .projectBox img{
+        width: 650px;
+        padding: 12px 0;
+    }
+}
+@media(max-width:767px){
+    .logo h5{
+        font-size: 10px;
+    }
+    .carousel-item img{
+        display: none;
+    }
+    .carousel-item .col-6{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .about img{
+        display: none;
+    }
+    .about .aboutImg{
+       display: none;
+    }
+    .projectBox img{
+        width: 500px;
+        padding: 12px 0;
+    }
+    .contact_list.col-3{
+        width: 50%;
+    }
+    .footer .col-2{
+        width: 50%;
+    }
+    .footer .col-4{
+        width: 50%;
+        align-content: center;
+    }
+}
+@media(max-width:576px){
+     .slide .carousel-item .col-6 h1{
+    font-size: 50px;
+    }
+    .testimotionals .card{
+        width: 100%;
+    }
+    .footer .col-2{
+        display: none;
+    }
+}
+@media(max-width:541px){
+    .logo{
+        display: none;
+    }
+    .download{
+        width: 35%;
+    }
+    .projectBox img{
+        width: 450px;
+    }
 }

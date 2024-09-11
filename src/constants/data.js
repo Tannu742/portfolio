@@ -17,7 +17,7 @@ export const contact = [
     { id: 1, title: 'ADDRESS', para: 'Najafgarh, New Delhi', icon: faMapLocation, link:'' },
     { id: 2, title: 'CONTACT NUMBER', para: '+91 7042429575', icon: faPhone, link:'tel:+91 7042429575' },
     { id: 3, title: 'EMAIL ADDRESS', para: 'tanisharajput@gmail.com', icon: faPaperPlane, link:'mailto:tanisharajput9575@gmail.com' },
-    { id: 4, title: 'WEBSITE', para: 'https://lively-biscuit-c419b3.netlify.app', icon: faEarthAmerica, link:'https://lively-biscuit-c419b3.netlify.app' },
+    { id: 4, title: 'WEBSITE', para: 'My Portfolio', icon: faEarthAmerica, link:'https://lively-biscuit-c419b3.netlify.app' },
 ]
 export const Links = [
     {id:1, path:'#home', link:'Home'},

@@ -9,12 +9,12 @@ const Footer = () => {
         <>
             <div className='footer p-5'>
                 <Row className='m-0'>
-                    <Col>
+                    <Col className="col-4">
                         <h5>About</h5>
                         <p>Our portfolio reflects our dedication to frontend
                             development through innovative design and flawless execution.</p>
                     </Col>
-                    <Col>
+                    <Col className='col-2'>
                         <h5>Pages</h5>
                         <ul className='list-unstyled' typeof=''>
                             <li>Home</li>
@@ -26,7 +26,7 @@ const Footer = () => {
                             <li>Contact</li>
                         </ul>
                     </Col>
-                    <Col>
+                    <Col className='col-2'>
                         <h5>Services</h5>
                         <ul className='list-unstyled' typeof=''>
                             <li>Website Development</li>
@@ -37,7 +37,7 @@ const Footer = () => {
                             <li>SEO Optimization</li>
                         </ul>
                     </Col>
-                    <Col>
+                    <Col className='col-4'>
                         <h5>Have a Questions?</h5>
                         <ul className='list-unstyled'>
                             <li><FontAwesomeIcon className='icon' icon={faLocationPin} /> Najafgarh, New Delhi</li>
