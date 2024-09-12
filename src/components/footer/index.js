@@ -8,41 +8,18 @@ const Footer = () => {
     return (
         <>
             <div className='footer p-5'>
-                <Row className='m-0'>
-                    <Col className="col-4">
+                <Row className='m-0 justify-content-between'>
+                    <Col>
                         <h5>About</h5>
                         <p>Our portfolio reflects our dedication to frontend
                             development through innovative design and flawless execution.</p>
                     </Col>
-                    <Col className='col-2'>
-                        <h5>Pages</h5>
-                        <ul className='list-unstyled' typeof=''>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Resume</li>
-                            <li>Services</li>
-                            <li>Skills</li>
-                            <li>Projects</li>
-                            <li>Contact</li>
-                        </ul>
-                    </Col>
-                    <Col className='col-2'>
-                        <h5>Services</h5>
-                        <ul className='list-unstyled' typeof=''>
-                            <li>Website Development</li>
-                            <li>Version Controls</li>
-                            <li>Website Design</li>
-                            <li>Interactive Features</li>
-                            <li>Performance Optimization</li>
-                            <li>SEO Optimization</li>
-                        </ul>
-                    </Col>
-                    <Col className='col-4'>
+                    <Col>
                         <h5>Have a Questions?</h5>
                         <ul className='list-unstyled'>
-                            <li><FontAwesomeIcon className='icon' icon={faLocationPin} /> Najafgarh, New Delhi</li>
-                            <li><FontAwesomeIcon className='icon' icon={faPhone} /><Link to={'tel:+91 7042429575'}> +91 7042429575</Link></li>
-                            <li><FontAwesomeIcon className='icon' icon={faPaperPlane} /><Link to={'mailto:tanisharajput9575@gmail.com'}> tanisharajput9575@gmail.com</Link></li>
+                            <li><FontAwesomeIcon className='icon my-2' icon={faLocationPin} /> Najafgarh, New Delhi</li>
+                            <li><FontAwesomeIcon className='icon my-2' icon={faPhone} /><Link to={'tel:+91 7042429575'}> +91 7042429575</Link></li>
+                            <li><FontAwesomeIcon className='icon my-2' icon={faPaperPlane} /><Link to={'mailto:tanisharajput9575@gmail.com'}> tanisharajput9575@gmail.com</Link></li>
                         </ul>
                     </Col>
                 </Row>
