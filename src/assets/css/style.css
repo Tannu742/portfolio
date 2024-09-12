@@ -17,7 +17,7 @@ header{
 }
 .footer li a{
     text-decoration: none;
-    color: var(--text-color2);
+    color: var(--text-color);
 }
 .footerFoot{
     color: var(--basic-text);
@@ -81,19 +81,16 @@ button.btn.btn-secondary.btn-sm {
     border-radius: 30px;
     border-color: var(--basic-text);
 }
-.about h1 {
+.theme-heading {
     font-size: 45px;
     font-family: system-ui;
     font-weight: 700;
 }
-.head p {
+.theme-headingPara{
     color: var(--text-color2);
     font-family: monospace;
 }
-.head {
-    position: relative;
-}
-.head h2 {
+.theme-heading span::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -101,31 +98,19 @@ button.btn.btn-secondary.btn-sm {
     font-weight: 900;
     font-size: 80px;
 }
-.about_head ul span {
-    font-weight: 800;
-    color: var(--basic-text);
-    margin-right: 20px;
-}
-.about_head ul li {
-    color: var(--text-color2);
-    font-size: 20px;
+.theme-heading span::before {
+    content: attr(data-placeholder);
 }
 .download {
     background-color: var(--text-color);
     color: var(--bg-color);
     padding: 15px 30px;
     border-radius: 30px;
-    width: 30%;
-}
-.download a {
-    text-decoration: none;
-    color: var(--bg-color);
 }
 .cardBox.card {
     background: rgba(255, 255, 255, 0.1);
     position:relative;
     margin: 20px 0;
-    /* height: 200px; */
     transform-style: preserve-3d;
     cursor: pointer;
     transform: perspective(2000px);
@@ -219,6 +204,7 @@ button.btn.btn-secondary.btn-sm {
 .image {
     transition: .5s ease;
     backface-visibility: hidden;
+    width: 520px;
 }  
 .middle {
     transition: .5s ease;
@@ -240,151 +226,6 @@ button.btn.btn-secondary.btn-sm {
     background-color: var(--text-color);
     color: var(--basic-text);
     cursor: pointer;
-    font-size: 16px;
     padding: 16px 32px;
-}
-.text a{
     text-decoration: none;
-    color: var(--basic-text);
-}
-@media(max-width:1200px){
-    .imgA{
-        width: 400px;
-    }
-    .imgB{
-        width: 435px;
-    }
-    .imgC{
-        width: 440px;
-    }
-    .imgD{
-        width: 430px;
-    }
-    .download{
-        width: 35%;
-    }
-}
-@media(max-width:1025px){
-    .slide .carousel-item .col-6 h1{
-        font-size: 56px;
-    }
-    .download{
-        width:35%;
-    }
-    .cardBox.card{
-        width: 30%;
-    }
-    .imgA{
-        width: 400px;
-    }
-    .imgB{
-        width: 435px;
-    }
-    .imgC{
-        width: 440px;
-    }
-    .imgD{
-        width: 430px;
-    }
-    .resume .card{
-        width: 30%;
-    }
-}
-@media(max-width:913px){
-    .download{
-        width: 65%;
-    }
-    .testimotionals .card{
-        width: 47%;
-    }
-    .projectBox img{
-        width: 700px;
-    }
-    .resume .col-3{
-        width: 100%;
-    }
-}
-@media(max-width:997px){
-    .download{
-        width: 60%;
-    }
-    .resume .col-3{
-        width: 100%;
-    }
-    .testimotionals .card{
-        width: 47%;
-    }
-    .projectBox img{
-        width: 700px;
-        padding: 10px 0;
-    }
-}
-@media(max-width:854px){
-    .slide .carousel-item .col-6 h1{
-        font-size: 50px;
-    }
-    .download{
-        width: 60%;
-    }
-    .testimotionals .card{
-        width: 45%;
-    }
-    .projectBox img{
-        width: 650px;
-        padding: 12px 0;
-    }
-}
-@media(max-width:767px){
-    .logo h5{
-        font-size: 10px;
-    }
-    .carousel-item img{
-        display: none;
-    }
-    .carousel-item .col-6{
-        width: 100%;
-        margin-top: 20px;
-    }
-    .about img{
-        display: none;
-    }
-    .about .aboutImg{
-       display: none;
-    }
-    .projectBox img{
-        width: 500px;
-        padding: 12px 0;
-    }
-    .contact_list.col-3{
-        width: 50%;
-    }
-    .footer .col-2{
-        width: 50%;
-    }
-    .footer .col-4{
-        width: 50%;
-        align-content: center;
-    }
-}
-@media(max-width:576px){
-     .slide .carousel-item .col-6 h1{
-    font-size: 50px;
-    }
-    .testimotionals .card{
-        width: 100%;
-    }
-    .footer .col-2{
-        display: none;
-    }
-}
-@media(max-width:541px){
-    .logo{
-        display: none;
-    }
-    .download{
-        width: 35%;
-    }
-    .projectBox img{
-        width: 450px;
-    }
 }

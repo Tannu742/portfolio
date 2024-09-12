@@ -26,8 +26,8 @@ const Slide = () => {
                             </Button>
                         </div>
                     </Col>
-                    <Col className='col-6 p-5'>
-                        <img width={400} src={bg_1} alt="" />
+                    <Col className='col-6 p-5 text-center'>
+                        <img className='m-1' width={400} src={bg_1} alt="" />
                     </Col>
                 </Row>
             </Carousel.Item>
@@ -45,7 +45,7 @@ const Slide = () => {
                             </Button>
                         </div>
                     </Col>
-                    <Col className='col-6 p-5'>
+                    <Col className='col-6 text-center'>
                         <img width={400} src={bg_2} alt=""  />
                     </Col>
                 </Row>
