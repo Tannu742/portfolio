@@ -31,15 +31,26 @@ header{
     color: var(--basic-text);
     font-weight: 700;
 }
-.navLinks a {
+.header {
+    background-color: var(--bg-color);
+    color: var(--basic-text);
+}
+.header .navbar-brand {
+    color: var(--basic-text);
+}
+.header .navLinks.nav-link {
     color: var(--basic-text);
     text-decoration: none;
     font-weight: 500;
     padding: 10px;
+    border-bottom: 2px solid transparent;
 }
-.navLinks a.active {
+.header .navLinks.nav-link.active, .header .navLinks.nav-link:hover {
     color: var(--text-color);
-    border-bottom: 2px solid var(--text-color);
+    border-color: var(--text-color);
+} 
+.header .navbar-toggler-icon{
+    background-color: var(--text-color2);
 }
 .home {
     background-color: var(--bg-color);
@@ -204,7 +215,6 @@ button.btn.btn-secondary.btn-sm {
 .image {
     transition: .5s ease;
     backface-visibility: hidden;
-    width: 520px;
 }  
 .middle {
     transition: .5s ease;
@@ -228,4 +238,77 @@ button.btn.btn-secondary.btn-sm {
     cursor: pointer;
     padding: 16px 32px;
     text-decoration: none;
+}
+@media(max-width:767px){
+    .carousel-inner img{
+        display: none;
+    }
+    .carousel .col-6{
+        width: 100%;
+    }
+    .aboutImg{
+        display: none;
+    }
+    .resume .cardBox.card{
+        width: 100%;
+        flex: none;
+    }
+    .testimotionals .card{
+        width: 100%;
+    }
+    .projects .col-6{
+        width: 500px;
+    }
+    .contact .col-3{
+        width: 50%;
+    }
+}
+@media(max-width:575px){
+    .slide{
+        padding: 0;
+    }
+    .slide .carousel-item .col-6 h1 {
+        font-size: 55px;
+    }
+    .footer .col{
+        width: 100%;
+        flex: none;
+    }
+}
+@media(max-width:375px){
+    .slide .carousel-item .col-6 h1 {
+        font-size: 45px;
+    }
+    button.btn.btn-primary.btn-sm{
+        padding: 15px 22px;
+    }
+    .image{
+        width: 270px;
+    }
+    .theme-heading span::before{
+        font-size: 65px;
+        top: 8px;
+    }
+    .contact .col-3{
+        width: 100%;
+    }
+    .footerFoot{
+        padding: 10px;
+    }
+    .theme-heading span::before{
+        font-size: 45px;
+    }
+}
+@media(max-width:324px){
+    .carousel-inner .col-6.p-5{
+        padding: 0;
+    }
+    button.btn.btn-primary.btn-sm{
+       width: 100%;
+       margin: 10px;
+    }
+    button.btn.btn-secondary.btn-sm{
+       width: 100%;
+       margin: 10px;
+    }
 }

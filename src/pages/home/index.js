@@ -1,4 +1,4 @@
-import { Col, Container, ProgressBar, Row } from 'react-bootstrap';
+import { Col, Container, Image, ProgressBar, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -91,7 +91,7 @@ const Home = () => {
                                 return (
                                     <div className='col-6' key={item.id}>
                                         <div className='my-2 projectBox'>
-                                            <img className='image' src={item.img} alt="" />
+                                        <Image className='image' src={item.img} fluid />
                                             <div className='middle'>
                                                 <Link rel='noreferrer' target='_blank' className='text' to={item.link}>{item.title}</Link>
                                             </div>
