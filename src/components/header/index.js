@@ -13,7 +13,7 @@ const Header = () => {
     }, []);
 
     return (
-        <Navbar collapseOnSelect expand="lg" className="header">
+        <Navbar sticky='top' collapseOnSelect expand="lg" className="header">
             <Container>
                 <Navbar.Brand href="" className='fw-bolder logo'>TANISHA</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
