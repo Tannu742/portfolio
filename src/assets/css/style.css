@@ -145,7 +145,7 @@ button.btn.btn-secondary.btn-sm {
 .testimotionals .card{
     background: rgba(255, 255, 255, 0.1);
     justify-content: center;
-    width: 31%;
+    min-height: 250px;
     position:relative;
     overflow: hidden;
     margin: 20px 0;
@@ -253,7 +253,7 @@ button.btn.btn-secondary.btn-sm {
         width: 100%;
         flex: none;
     }
-    .testimotionals .card{
+    .testimotionals .col-6{
         width: 100%;
     }
     .projects .col-6{
