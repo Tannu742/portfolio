@@ -37,7 +37,8 @@ export const projects = [
     { id: 2, img: imagePaths.bb, title: 'INSTA SITE', link: 'https://instu.netlify.app/' },
     { id: 3, img: imagePaths.cc, title: 'VIMEO SITE', link: 'https://spontaneous-cheesecake-604a3d.netlify.app/' },
     { id: 4, img: imagePaths.dd, title: 'BURGER SITE', link: 'https://burgerfast.netlify.app/' },
-    { id: 5, img: imagePaths.ee, title: 'SHOPPING SITE', link: 'https://shoppingshirt.netlify.app/' }
+    { id: 5, img: imagePaths.ee, title: 'SHOPPING SITE', link: 'https://shoppingshirt.netlify.app/' },
+    { id: 6, img: imagePaths.ff, title: 'REDUX POST', link: 'https://redux-posts.netlify.app/' }
 ]
 export const contact = [
     { id: 1, title: 'ADDRESS', para: 'Najafgarh, New Delhi', icon: faMapLocation, link: '' },
